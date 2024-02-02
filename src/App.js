@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Profile-MiaSilvia">
       <NavbarComponent />
       <Routes>
         <Route path="/" exact element={<HomePage />} />
