@@ -1,13 +1,17 @@
 import "../App.css";
-import { Link } from "react-router-dom";
 import React, { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 export default function NavbarComponent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const navigate = useNavigate();
+  function handleNavigate(e, params) {
+    e.preventDefault();
+    navigate(`/${params}`);
+  }
 
   return (
     <>
@@ -32,31 +36,31 @@ export default function NavbarComponent() {
           >
             <div className="lg:flex-grow lg:flex lg:items-center lg:w-auto w-full">
               <div className="lg:flex xl:space-x-4 lg:space-x-4  md:space-x-0">
-                <Link
-                  to={"/"}
+                <button
+                  onClick={(e) => handleNavigate(e, "")}
                   className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500 mr-4"
                 >
                   Home
-                </Link>
-                <Link
-                  to={"/portfolio"}
+                </button>
+                <button
+                  onClick={(e) => handleNavigate(e, "portfolio")}
                   className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500 mr-4"
                 >
                   Portfolio
-                </Link>
-                <Link
-                  to={"/about"}
+                </button>
+                <button
+                  onClick={(e) => handleNavigate(e, "about")}
                   className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500 mr-4"
                 >
                   About
-                </Link>
+                </button>
 
-                <Link
-                  to={"/contact"}
+                <button
+                  onClick={(e) => handleNavigate(e, "contact")}
                   className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500 "
                 >
                   Contact Me
-                </Link>
+                </button>
               </div>
             </div>
           </div>
