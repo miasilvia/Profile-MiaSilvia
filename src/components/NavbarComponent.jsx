@@ -52,10 +52,10 @@ export default function NavbarComponent() {
                 </Link>
 
                 <Link
-                  to={""}
+                  to={"/contact"}
                   className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500 "
                 >
-                  Contact
+                  Contact Me
                 </Link>
               </div>
             </div>
