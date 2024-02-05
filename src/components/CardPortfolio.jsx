@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function CardPortfolio() {
   return (
     <>
-      <article className="rounded-xl bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8">
+      <article className="rounded-xl bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8 max-w-5xl mx-auto mt-5">
         <div className="flex items-start sm:gap-8">
           <div
             className="hidden sm:grid sm:h-20 sm:w-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2 sm:border-gray-800"
