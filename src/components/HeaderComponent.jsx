@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function HeaderComponent() {
   return (
     <>
-      <section className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:items-center">
+      <section className="overflow-hidden bg-[#C7C8CC] sm:grid sm:grid-cols-2 sm:items-center">
         <div className="p-8 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
@@ -19,7 +19,7 @@ export default function HeaderComponent() {
             <div className="mt-4 md:mt-8">
               <Link
                 to="/portfolio"
-                className="inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
+                className="inline-block rounded bg-[#3C3633] px-12 py-3 text-sm font-medium text-white transition hover:text-[#3C3633] hover:bg-[#747264]  focus:outline-none focus:ring focus:ring-yellow-400"
               >
                 Portfolio
               </Link>
@@ -29,7 +29,7 @@ export default function HeaderComponent() {
 
         <img
           alt="Violin"
-          src="https://aqi.co.id/wp-content/uploads/2020/11/5-Fakta-Menarik-tentang-Programmer.jpg"
+          src="https://th.bing.com/th/id/OIP.qnIvHuIm-LhKV5ZgRo0RxQHaEK?rs=1&pid=ImgDetMain"
           className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
         />
       </section>

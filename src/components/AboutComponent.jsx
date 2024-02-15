@@ -1,14 +1,17 @@
+import React from "react";
 import "../App.css";
-
 export default function AboutComponent() {
   return (
     <>
-      <div className="max-w-5xl mx-auto mt-20">
-        <div className="max-w-sm w-full lg:max-w-full lg:flex">
+      <div
+        className="ml-10 mr-10 mt-20 xl:ml-56 xl:mr-56 lg:ml-44 lg:mr-44"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
+        <div className="max-w-sm w-full lg:max-w-full lg:flex ">
           <div
             className="h-48 lg:h-auto lg:w-56 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l  text-center overflow-hidden"
             style={{
-              backgroundImage: `url('https://avatars.githubusercontent.com/u/135966912?v=4')`,
+              backgroundImage: `url('https://media.licdn.com/dms/image/D5635AQEW3xnkpB_4gQ/profile-framedphoto-shrink_400_400/0/1707594763035?e=1708455600&v=beta&t=M0StH0XRXYSlKKEXwY_NPN-cWfxe4a5ze_apEp1rzs0')`,
             }}
             title="Woman holding a mug"
           >
@@ -20,8 +23,8 @@ export default function AboutComponent() {
               <p className="text-gray-700 text-base">
                 After graduating from Politeknik Negeri Indramayu with a degree
                 in Informatics Engineering, I further honed my skills at Binar
-                Bootcamp. As a beginner Full Stack Web Developer, I am prepared
-                to face the challenges of the digital world.
+                Academy Bootcamp. As a beginner Full Stack Web Developer, I am
+                prepared to face the challenges of the digital world.
               </p>
             </div>
           </div>

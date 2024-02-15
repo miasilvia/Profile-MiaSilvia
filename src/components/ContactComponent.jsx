@@ -31,7 +31,7 @@ export default function ContactComponent() {
   };
   return (
     <>
-      <div className="max-w-5xl mx-auto mt-14">
+      <div className=" mr-20 ml-20  mt-20">
         <h1 className="mb-5">Let's contact to collaborate together!</h1>
         <form ref={form} onSubmit={sendEmail} className="space-y-4">
           <div>
@@ -67,7 +67,7 @@ export default function ContactComponent() {
             <input
               type="submit"
               value="Send"
-              className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#3C3633] hover:text-[#3C3633] hover:bg-[#747264] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             />
           </div>
         </form>
