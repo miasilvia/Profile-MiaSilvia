@@ -5,3 +5,5 @@ export { default as HeaderComponent } from "./HeaderComponent";
 export { default as DetailPortfolio1 } from "./DetailPortfolio1";
 export { default as ContactComponent } from "./ContactComponent";
 export { default as Footer } from "./Footer";
+export { default as Satu } from "./Satu";
+export { default as ToggleComponent } from "./ToggleComponent";

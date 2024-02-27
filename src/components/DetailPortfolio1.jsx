@@ -3,10 +3,17 @@ import imgHome from "../images/home.png";
 import imgProduct from "../images/product.png";
 import imgOrder from "../images/order.png";
 import { Link } from "react-router-dom";
+import UseLayout from "../hooks/UseLayout";
 export default function DetailPortfolio1() {
+  const mode = UseLayout();
   return (
     <>
-      <div className="container mx-auto max-w-7xl mt-8 ">
+      <div
+        className="container mx-auto max-w-7xl mt-8 "
+        style={{
+          color: mode.textColor,
+        }}
+      >
         <div className="flex flex-wrap justify-center">
           {/* Card 1 */}
           <div className="max-w-sm mx-4 mb-8 ">
@@ -31,9 +38,14 @@ export default function DetailPortfolio1() {
         </div>
       </div>
       {/* Text Section */}
-      <div className="mt-8 text-center  mx-auto max-w-5xl">
+      <div
+        className="mt-8 text-center  mx-auto max-w-5xl mb-10"
+        style={{
+          color: mode.textColor,
+        }}
+      >
         <h1 className="text-2xl font-bold mb-4">Skin E-Commerce Website</h1>
-        <h3 className="text-gray-700">
+        <h3>
           <strong>Description</strong>
         </h3>
         <p>
@@ -45,8 +57,8 @@ export default function DetailPortfolio1() {
           on their skin type, browse the product catalog, add items to their
           shopping cart, and seamlessly complete their purchases online.
         </p>
-        <h3 className="text-gray-700">
-          <strong>Peran</strong>
+        <h3>
+          <strong>Role</strong>
         </h3>
         <p>
           As one of the developers in this project, my responsibilities include
@@ -55,7 +67,7 @@ export default function DetailPortfolio1() {
           and implementing responsive design to ensure a seamless user
           experience across various devices, from desktop to mobile.
         </p>
-        <h3 className="text-gray-700">
+        <h3>
           <strong>Technology</strong>
         </h3>
         <p>
@@ -71,7 +83,7 @@ export default function DetailPortfolio1() {
           Styling: Implementing Tailwind CSS for creating a responsive and
           modern design.
         </p>
-        <h3 className="text-gray-700">
+        <h3>
           <strong>Link Demo</strong>
         </h3>
         The demo of the e-commerce website can be accessed{" "}

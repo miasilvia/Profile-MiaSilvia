@@ -1,10 +1,11 @@
 import React, { useRef } from "react";
 import "../App.css";
 import emailjs from "@emailjs/browser";
-import { ToastContainer, toast } from 'react-toastify'; // Import react-toastify
-import 'react-toastify/dist/ReactToastify.css'; // Import the CSS
-
+import { ToastContainer, toast } from "react-toastify"; // Import react-toastify
+import "react-toastify/dist/ReactToastify.css"; // Import the CSS
+import UseLayout from "../hooks/UseLayout";
 export default function ContactComponent() {
+  const mode = UseLayout()
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -31,36 +32,36 @@ export default function ContactComponent() {
   };
   return (
     <>
-      <div className=" mr-20 ml-20  mt-20">
+      <div className=" ml-10 mr-10 mt-20 mb-10 xl:ml-56 xl:mr-56 lg:ml-44 lg:mr-44 bg-opacity-30 " style={{color:mode.color}}>
         <h1 className="mb-5">Let's contact to collaborate together!</h1>
         <form ref={form} onSubmit={sendEmail} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium ">
               Your Name
             </label>
             <input
               type="text"
               name="from_name"
-              className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white bg-opacity-30 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium ">
               Your Email
             </label>
             <input
               type="email"
               name="from_email"
-              className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white bg-opacity-30 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium ">
               Message
             </label>
             <textarea
               name="message"
-              className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white bg-opacity-30 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
             ></textarea>
           </div>
           <div>
