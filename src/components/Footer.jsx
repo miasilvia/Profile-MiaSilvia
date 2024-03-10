@@ -89,9 +89,7 @@ export default function Footer() {
                 Products
               </h6>
               <p>
-                <button href="#!" className="text-[#3C3633] dark:text-[#3C3633]">
-                  React
-                </button>
+                <button href="#!">React</button>
               </p>
             </div>
 
@@ -100,24 +98,16 @@ export default function Footer() {
                 Useful links
               </h6>
               <p className="mb-4">
-                <button href="#!" className="text-[#3C3633] dark:text-[#3C3633]">
-                  Home
-                </button>
+                <button href="#!">Home</button>
               </p>
               <p className="mb-4">
-                <button href="#!" className="text-[#3C3633] dark:text-[#3C3633]">
-                  Portfolio
-                </button>
+                <button href="#!">Portfolio</button>
               </p>
               <p className="mb-4">
-                <button href="#!" className="text-neutral-600 dark:text-[#3C3633]">
-                  About
-                </button>
+                <button href="#!">About</button>
               </p>
               <p>
-                <button href="#!" className="text-neutral-600 dark:text-[#3C3633]">
-                  Contact Me
-                </button>
+                <button href="#!">Contact Me</button>
               </p>
             </div>
 
