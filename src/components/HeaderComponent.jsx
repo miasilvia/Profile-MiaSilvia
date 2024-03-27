@@ -15,7 +15,7 @@ export default function HeaderComponent() {
         <div className="p-8 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             <h2 className="text-2xl font-bold  md:text-3xl">
-              Hello, I'm Front End Developer
+              Hello, I'm Web Developer
             </h2>
 
             <p className="hidden  md:mt-4 md:block">

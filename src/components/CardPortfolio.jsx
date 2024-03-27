@@ -9,7 +9,7 @@ export default function CardPortfolio() {
         style={{
           color: mode.textColor,
         }}
-        className="rounded-xl bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8 max-w-5xl mx-auto mt-20 bg-opacity-30"
+        className="rounded-xl bg-white p-4  max-w-5xl mx-auto bg-opacity-30"
       >
         <div className="flex items-start sm:gap-8">
           <div
@@ -60,7 +60,7 @@ export default function CardPortfolio() {
               </p>
               <p className="mt-2 text-xs font-medium  sm:mt-0">
                 <Link
-                  to="https://github.com/miasilvia/Profile-MiaSilvia.git"
+                  to="https://github.com/orgs/BinaryBuilders-fsw38/repositories"
                   target="_blank"
                   className="underline hover:text-gray-700"
                 >
@@ -75,7 +75,7 @@ export default function CardPortfolio() {
         style={{
           color: mode.textColor,
         }}
-        className="rounded-xl bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8 max-w-5xl mx-auto mt-20 bg-opacity-30"
+        className="rounded-xl bg-white p-4  sm:p-6 lg:p-8 max-w-5xl mx-auto mt-20 bg-opacity-30"
       >
         <div className="flex items-start sm:gap-8">
           <div
@@ -103,7 +103,8 @@ export default function CardPortfolio() {
               in uncovering the caloric content of the foods you ingest.
               Boasting a user-friendly and intuitive interface, it allows you to
               explore a wide array of food items and promptly provides you with
-              their respective calorie counts.
+              their respective calorie counts. This data is taken from api
+              https://developer.edamam.com/
             </p>
 
             <div className="mt-4 sm:flex sm:items-center sm:gap-2">

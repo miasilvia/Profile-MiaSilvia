@@ -1,22 +1,15 @@
 import React from "react";
-import "../App.css";
-import UseLayout from "../hooks/UseLayout";
-export default function AboutComponent() {
-  const mode = UseLayout();
+import { NavbarComponent, BiodataLeft } from "./index";
+export default function CobaFull() {
   return (
     <>
-      <div
-        className="bg-white bg-opacity-30 "
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          color: mode.textColor,
-        }}
-      >
+      <div className="rounded-lg basis-2/3 bg-[#ffffff] flex flex-col items-center ">
         <div className="max-w-sm w-full lg:max-w-full lg:flex ">
           <div
-            className=" flex-none bg-cover  text-center overflow-hidden "
-            
+            className="h-48 flex-none bg-cover  text-center overflow-hidden "
+            style={{
+              backgroundImage: `url('https://media.licdn.com/dms/image/D5635AQEW3xnkpB_4gQ/profile-framedphoto-shrink_400_400/0/1707594763035?e=1709143200&v=beta&t=GxSRew9FgDCzBfbpPxn_gSPs1oU3UJTVk1mSIvuWEXM')`,
+            }}
             title="Woman holding a mug"
           >
             {" "}
