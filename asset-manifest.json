@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Profile-MiaSilvia/static/css/main.7eee306d.css",
-    "main.js": "/Profile-MiaSilvia/static/js/main.46c3a807.js",
+    "main.js": "/Profile-MiaSilvia/static/js/main.38e2750c.js",
     "static/js/592.599f76a2.chunk.js": "/Profile-MiaSilvia/static/js/592.599f76a2.chunk.js",
     "static/media/home.png": "/Profile-MiaSilvia/static/media/home.8905c59300c91c3e9064.png",
     "static/media/order.png": "/Profile-MiaSilvia/static/media/order.6f3efe90ba452146721e.png",
     "static/media/product.png": "/Profile-MiaSilvia/static/media/product.3c48e1c22b4f4cc2f1ff.png",
     "index.html": "/Profile-MiaSilvia/index.html",
     "main.7eee306d.css.map": "/Profile-MiaSilvia/static/css/main.7eee306d.css.map",
-    "main.46c3a807.js.map": "/Profile-MiaSilvia/static/js/main.46c3a807.js.map",
+    "main.38e2750c.js.map": "/Profile-MiaSilvia/static/js/main.38e2750c.js.map",
     "592.599f76a2.chunk.js.map": "/Profile-MiaSilvia/static/js/592.599f76a2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7eee306d.css",
-    "static/js/main.46c3a807.js"
+    "static/js/main.38e2750c.js"
   ]
 }
