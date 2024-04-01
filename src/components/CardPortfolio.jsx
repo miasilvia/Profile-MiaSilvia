@@ -5,6 +5,14 @@ export default function CardPortfolio() {
   const mode = UseLayout();
   return (
     <>
+      <div
+        className=" font-bold text-xl mb-2"
+        style={{
+          color: mode.textColor,
+        }}
+      >
+        Portfolio
+      </div>
       <article
         style={{
           color: mode.textColor,
@@ -15,14 +23,13 @@ export default function CardPortfolio() {
           <div
             className="hidden sm:grid sm:h-20 sm:w-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2 sm:border-gray-800"
             aria-hidden="true"
-          >
-            <div className="flex items-center gap-1">
-              <img
-                src="https://skincommerce.netlify.app/static/media/everglo-logo.9e6e822832fa20c0d7e3.png"
-                alt=""
-              />
-            </div>
-          </div>
+            style={{
+              backgroundImage:
+                "url(https://skincommerce.netlify.app/static/media/everglo-logo.9e6e822832fa20c0d7e3.png)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
           <div>
             <strong className="rounded border border-indigo-500 bg-gray-800 px-3 py-1.5 text-[10px] font-medium text-white">
               01
@@ -81,11 +88,13 @@ export default function CardPortfolio() {
           <div
             className="hidden sm:grid sm:h-20 sm:w-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2 sm:border-gray-800"
             aria-hidden="true"
-          >
-            <div className="flex items-center gap-1">
-              <img src="" alt="" />
-            </div>
-          </div>
+            style={{
+              backgroundImage:
+                "url(https://th.bing.com/th/id/OIG3.NKxzY_5Y_0ibnNJreXXe?pid=ImgGn)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
           <div>
             <strong className="rounded border border-indigo-500 bg-gray-800 px-3 py-1.5 text-[10px] font-medium text-white">
               02
@@ -122,6 +131,60 @@ export default function CardPortfolio() {
               <p className="mt-2 text-xs font-medium  sm:mt-0">
                 <Link
                   to="https://github.com/miasilvia/api-foodEdamam.git"
+                  target="_blank"
+                  className="underline hover:text-gray-700"
+                >
+                  GitHub
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article
+        style={{
+          color: mode.textColor,
+        }}
+        className="rounded-xl bg-white p-4  sm:p-6 lg:p-8 max-w-5xl mx-auto mt-20 bg-opacity-30"
+      >
+        <div className="flex items-start sm:gap-8">
+          <div
+            className="hidden sm:grid sm:h-20 sm:w-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2 sm:border-gray-800"
+            aria-hidden="true"
+            style={{
+              backgroundImage:
+                "url(https://th.bing.com/th/id/OIG1.gQMyMuEFkS2OjXJo6EhT?pid=ImgGn",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
+          <div>
+            <strong className="rounded border border-indigo-500 bg-gray-800 px-3 py-1.5 text-[10px] font-medium text-white">
+              03
+            </strong>
+
+            <h3 className="mt-4 text-lg font-medium sm:text-xl">
+              <p href="" className="hover:underline">
+                {" "}
+                Administrative Letter Management Website{" "}
+              </p>
+            </h3>
+            <p className="mt-1 text-sm ">
+              This mail administration website was created as a final project at
+              the university in 2018. It is built using PHP and is designed to
+              manage incoming and outgoing mail. Its features include data input
+              for incoming and outgoing mail, the disposition process for
+              incoming mail, creation of outgoing mail, data report export, and
+              file download. With the data report export feature, you can easily
+              download and analyze mail data. The file download feature allows
+              you to access and save documents directly from the platform.
+            </p>
+
+            <div className="mt-4 sm:flex sm:items-center sm:gap-2">
+              <span className="hidden sm:block" aria-hidden="true"></span>
+              <p className="mt-2 text-xs font-medium  sm:mt-0">
+                <Link
+                  to="https://github.com/miasilvia/admin_surat.git"
                   target="_blank"
                   className="underline hover:text-gray-700"
                 >

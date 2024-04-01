@@ -6,7 +6,7 @@ export default function AboutComponent() {
   return (
     <>
       <div
-        className="bg-white bg-opacity-30 "
+        className=" bg-opacity-30 rounded-lg p-5"
         style={{
           display: "flex",
           justifyContent: "center",
@@ -16,7 +16,6 @@ export default function AboutComponent() {
         <div className="max-w-sm w-full lg:max-w-full lg:flex ">
           <div
             className=" flex-none bg-cover  text-center overflow-hidden "
-            
             title="Woman holding a mug"
           >
             {" "}

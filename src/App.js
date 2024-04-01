@@ -21,13 +21,13 @@ function App() {
   return (
     <BrowserRouter basename="/Profile-MiaSilvia">
       <div className="bg-[#90d5f2]">
-        <div className="flex w-full xl:flex-row lg:flex-row md:flex-row sm:flex-col flex-col  ">
+        <div className="flex w-full xl:flex-row lg:flex-row  flex-col  ">
           <div className="sticky left-0 top-0 rounded-lg basis-1/4  flex flex-col  items-center m-4 ">
             <BiodataLeft />
           </div>
           <div
-            className="flex flex-col min-h-screen m-4 rounded-lg xl:w-full lg:w-full md:w-full p-16"
-            style={{ backgroundColor: mode.background }}
+            className="flex flex-col min-h-screen m-4 rounded-lg xl:w-full lg:w-full  p-16 bg-white"
+            style={{ backgroundColor: mode.backgroundNavbar }}
           >
             <div className="rounded-lg basis-2/3 ">
               <Routes>

@@ -7,7 +7,7 @@ const LayoutContextProvider = (props) => {
     nightMode: false,
     day: {
       color: "#000",
-      background: "#fff",
+      backgrounds: "#fff",
       backgroundHeader: "#C7C8CC",
     },
     night: {

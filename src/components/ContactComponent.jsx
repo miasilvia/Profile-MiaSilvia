@@ -32,8 +32,11 @@ export default function ContactComponent() {
   };
   return (
     <>
-      <div style={{ color: mode.color }}>
-        <div className=" font-bold text-xl mb-2">About Me</div>
+      <div
+        className=" bg-opacity-30 rounded-lg p-5"
+        style={{ color: mode.color }}
+      >
+        <div className=" font-bold text-xl mb-2">Contact Me</div>
         <div className=" ml-10 mr-10 mt-20 mb-10 xl:ml-56 xl:mr-56 lg:ml-44 lg:mr-44 bg-opacity-30 ">
           <h1 className="mb-5">Let's contact to collaborate together!</h1>
           <form ref={form} onSubmit={sendEmail} className="space-y-4">

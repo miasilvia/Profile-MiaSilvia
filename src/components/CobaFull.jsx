@@ -1,5 +1,4 @@
 import React from "react";
-import { NavbarComponent, BiodataLeft } from "./index";
 export default function CobaFull() {
   return (
     <>

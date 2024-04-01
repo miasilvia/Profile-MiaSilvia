@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import UseLayout from "../hooks/UseLayout";
 export default function SkillsComponent() {
+  const mode = UseLayout();
   const [current, setCurrent] = useState(0);
   const images = [
     "https://logodownload.org/wp-content/uploads/2016/10/html5-logo.png",
@@ -13,60 +15,73 @@ export default function SkillsComponent() {
 
   return (
     <>
-      <h1 className="text-xl font-bold"> Knowledges</h1>
-      <div className=" flex p-2">
-        <div className="basis-1/2  flex">
+      <h1 className="text-xl ml-5 font-bold mt-10" style={{
+          color: mode.textColor,
+        }}>
+        <i class="fas fa-tools"></i> Knowledges and Skills
+      </h1>
+      <div className=" xl:flex  p-2">
+        <div className="basis-1/2  xl:flex lg:flex justify-items:center ">
           <div className="basis-1/2 ">
-            <div className="rounded-lg bg-[#90be98] m-2 pl-4">
+            <div className="rounded-lg bg-[#838383] m-4  text-center">
               Problem Solving
             </div>
-            <div className="rounded-lg bg-[#ffaad1] m-2 pl-4">
+            <div className="rounded-lg bg-[#838383] m-4  text-center">
               Communication
             </div>
-            <div className="rounded-lg bg-[#90be98] m-2 pl-4">Team Work</div>
+            <div className="rounded-lg bg-[#838383] m-4  text-center">
+              Team Work
+            </div>
           </div>
           <div className="basis-1/2 ">
-            <div className="rounded-lg bg-[#ffaad1] m-2 pl-4">
+            <div className="rounded-lg bg-[#d8dad8] m-4  text-center">
               Growth Maindset
             </div>
-            <div className="rounded-lg bg-[#90be98] m-2 pl-4">
+            <div className="rounded-lg bg-[#d8dad8] m-4  text-center">
               Management Skill
             </div>
-            <div className="rounded-lg bg-[#ffaad1] m-2 pl-4">Analyst</div>
+            <div className="rounded-lg bg-[#d8dad8] m-4  text-center">
+              Analyst
+            </div>
           </div>
         </div>
-        <div className="basis-1/2 bg-[#f84e4e]">
-          <div>Web Development</div>
-          <div>Web Design</div>
-          <div>Administration</div>
-          <div>Content Creator</div>
-          <div>Content Creator</div>
+        <div className="basis-1/2 xl:ml-5 flex flex-col  ">
+          <div className="bg-[#838383] text-center rounded-lg m-2">
+            Web Development
+          </div>
+          <div className="bg-[#d8dad8] text-center rounded-lg m-2">
+            Web Design
+          </div>
+          <div className="bg-[#838383] text-center rounded-lg m-2">
+            Administration
+          </div>
+          <div className="bg-[#d8dad8] text-center rounded-lg m-2">
+            Content Creator
+          </div>
         </div>
       </div>
 
-      <div className="flex justify-center items-center mt-32  rounded-lg">
+      <div className="flex justify-center items-center mt-20  rounded-lg">
         <button
-          className="p-4 bg-[#000000] text-white"
+          className="xl:p-4 lg:p-4 md:p-2 bg-[#000000] text-white rounded-lg"
           onClick={() =>
             setCurrent(current === 0 ? images.length - 1 : current - 1)
           }
         >
           <i className="fas fa-arrow-left"></i>
         </button>
-        <div className="flex justify-center items-center space-x-4 w-full">
-          {images.slice(current, current + 3).map((image, index) => (
+        <div className="flex justify-center items-center xl:space-x-4 space-x-2 w-full ">
+          {images.slice(current, current + 4).map((image, index) => (
             <img
               key={index}
               src={image}
               alt=""
-              className={`xl:w-32 xl:h-32 lg:w-24 lg:h-24 md:w-24 m:h-24 w-12 h-12 transition-transform duration-500 ease-in-out transform-gpu ${
-                current === index ? "scale-100" : "scale-90"
-              }`}
+              className={` xl:w-32 xl:h-32 lg:w-20 lg:h-20 md:w-12 md:h-14 sm:w-14 sm:h-12 w-10 h-10  `}
             />
           ))}
         </div>
         <button
-          className="p-4 bg-[#000000] text-white"
+          className="xl:p-4 lg:p-4 md:p-2 bg-[#000000] text-white rounded-lg"
           onClick={() =>
             setCurrent(current === images.length - 1 ? 0 : current + 1)
           }

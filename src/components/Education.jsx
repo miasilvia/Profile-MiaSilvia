@@ -1,14 +1,28 @@
 import React from "react";
-
+import UseLayout from "../hooks/UseLayout";
 export default function Education() {
+  const mode = UseLayout();
   return (
     <>
       <div className="mb-10">
-        <h1 className="text-xl font-bold"> Resume</h1>
+        <h1
+          className="text-xl font-bold"
+          style={{
+            color: mode.textColor,
+          }}
+        >
+          {" "}
+          Resume
+        </h1>
       </div>
-      <div className="flex">
+      <div className="md:flex">
         <div className="basis-1/2 ">
-          <h1 className="ml-5 font-bold">
+          <h1
+            className="ml-5 font-bold"
+            style={{
+              color: mode.textColor,
+            }}
+          >
             <i className="fas fa-graduation-cap"></i> Education
           </h1>
           <div className="bg-[#a399ae]  p-3 rounded-lg m-5">
@@ -23,7 +37,12 @@ export default function Education() {
           </div>
         </div>
         <div className="basis-1/2 ">
-          <h1 className="ml-5 font-bold">
+          <h1
+            className="ml-5 font-bold"
+            style={{
+              color: mode.textColor,
+            }}
+          >
             <i className="fas fa-briefcase"></i> Experience
           </h1>
 

@@ -1,5 +1,5 @@
 import "../App.css";
-import { HeaderComponent, Education,SkillsComponent } from "../components";
+import { Education, SkillsComponent } from "../components";
 
 export default function ResumePage() {
   return (
