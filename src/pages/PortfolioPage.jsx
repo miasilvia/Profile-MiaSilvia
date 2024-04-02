@@ -3,7 +3,9 @@ import { CardPortfolio } from "../components";
 export default function PortofolioPage() {
   return (
     <>
-      <CardPortfolio />
+      <div className="rect-animate">
+        <CardPortfolio />
+      </div>
     </>
   );
 }

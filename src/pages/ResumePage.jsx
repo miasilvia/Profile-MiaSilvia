@@ -4,8 +4,11 @@ import { Education, SkillsComponent } from "../components";
 export default function ResumePage() {
   return (
     <>
-      <Education />
-      <SkillsComponent />
+      <div className="rect-animate">
+        <Education />
+        <SkillsComponent />
+      </div>
+
       <div className="flex "></div>
     </>
   );

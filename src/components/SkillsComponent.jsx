@@ -15,9 +15,12 @@ export default function SkillsComponent() {
 
   return (
     <>
-      <h1 className="text-xl ml-5 font-bold mt-10" style={{
+      <h1
+        className="text-xl ml-5 font-bold mt-10"
+        style={{
           color: mode.textColor,
-        }}>
+        }}
+      >
         <i class="fas fa-tools"></i> Knowledges and Skills
       </h1>
       <div className=" xl:flex  p-2">
@@ -76,7 +79,7 @@ export default function SkillsComponent() {
               key={index}
               src={image}
               alt=""
-              className={` xl:w-32 xl:h-32 lg:w-20 lg:h-20 md:w-12 md:h-14 sm:w-14 sm:h-12 w-10 h-10  `}
+              className={` xl:w-32 xl:h-32 xl:p-6 lg:p-3 p-2 lg:w-20 lg:h-20 md:w-24 md:h-24 sm:w-20 sm:h-20 w-12 h-12  `}
             />
           ))}
         </div>

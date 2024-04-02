@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import UseLayout from "../hooks/UseLayout";
-
+import gambar from "../images/MIA.jpg";
 export default function BiodataLeft() {
   const mode = UseLayout();
   const [isHidden, setHidden] = useState(false);
@@ -21,7 +21,7 @@ export default function BiodataLeft() {
         <div></div>
         <img
           className="rounded-lg lg:w-40 w-20 shadow-2xl "
-          src="https://media.licdn.com/dms/image/D5635AQEW3xnkpB_4gQ/profile-framedphoto-shrink_400_400/0/1707594763035?e=1712041200&v=beta&t=RokULVTVIGkPXtUsRMH3hOSF_6bsn26Dx18wyC21tTM"
+          src={gambar}
           alt=""
         />
         <h1 className="lg:text-xl font-bold  mt-4">MIA SILVIA</h1>
@@ -112,9 +112,16 @@ export default function BiodataLeft() {
             </div>
           </div>
         </div>
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold lg:py-2 lg:px-4 p-1 rounded m-2 md:text-md text-xs lg:relative absolute right-0">
-          Download CV
-        </button>
+        <a
+          className="lg:relative absolute right-0"
+          href="https://drive.google.com/uc?export=download&id=1KR0tijMs07HSyGvGZEzgt3nYVX70qsOb"
+          download
+        >
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold lg:py-2 lg:px-4 p-1 rounded m-2 md:text-md text-xs ">
+            Download CV
+          </button>
+        </a>
+
         <button onClick={handleHidden} className="lg:hidden ">
           {isHidden ? (
             <i className="fas fa-arrow-alt-circle-up animate-bounce "></i>

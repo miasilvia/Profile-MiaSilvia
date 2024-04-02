@@ -6,7 +6,7 @@ export default function CardPortfolio() {
   return (
     <>
       <div
-        className=" font-bold text-xl mb-2"
+        className=" font-bold text-xl mb-10"
         style={{
           color: mode.textColor,
         }}
@@ -42,7 +42,7 @@ export default function CardPortfolio() {
               </p>
             </h3>
 
-            <p className="mt-1 text-sm ">
+            <p className="mt-1 text-sm text-justify">
               EverGlow, an e-commerce project specializing in the sale of men's
               skincare products, offers a unique shopping experience for men who
               care about the health and appearance of their skin.
@@ -107,7 +107,7 @@ export default function CardPortfolio() {
               </p>
             </h3>
 
-            <p className="mt-1 text-sm ">
+            <p className="mt-1 text-sm text-justify">
               “Food Calories” is a meticulously designed website that aids you
               in uncovering the caloric content of the foods you ingest.
               Boasting a user-friendly and intuitive interface, it allows you to
@@ -169,7 +169,7 @@ export default function CardPortfolio() {
                 Administrative Letter Management Website{" "}
               </p>
             </h3>
-            <p className="mt-1 text-sm ">
+            <p className="mt-1 text-sm text-justify">
               This mail administration website was created as a final project at
               the university in 2018. It is built using PHP and is designed to
               manage incoming and outgoing mail. Its features include data input
